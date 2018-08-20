@@ -13,7 +13,8 @@ public class MailController {
 
     @RequestMapping("/mail")
     public String mail() {
-        mailSender.send("andy.sek94@gmail.com", "SpringBoot", "hey, spring is working!");
+        mailSender.send("andy.sek94@gmail.com", "SpringBoot",
+                "hey, spring is working!");
         return "Mail sent.";
     }
 
